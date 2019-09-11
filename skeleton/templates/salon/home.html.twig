@@ -4,6 +4,62 @@
 
 {% block body %}
 
-<p>Cards mit dem Salons</p>
+    <div class="container">
+        <ul class="all_salons">
+            <li>
+                <div class="card card-custom">
+                    <img src="{{ asset('img/salon/eschborn.jpg') }}" class="card-img-top" alt="Salon Eschborn">
+                    <div class="card-body">
+                        <h5 class="card-title">Eschborn</h5>
+                        <p class="card-text">Neugasse 28<br>65760 Eschborn<br>Tel. 06196-43609</p>
+                        <a href="{{ path('app_homepage') }}" class="btn btn-custom">zum Salon</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card card-custom">
+                    <img src="{{ asset('img/original/eckenheim.jpg') }}" class="card-img-top" alt="Salon Eckenheim">
+                    <div class="card-body">
+                        <h5 class="card-title">Eckenheim</h5>
+                        <p class="card-text">Eckenheimer Landstaße. 285<br>60320 Frankfurt<br>Tel. 069-56043526 </p>
+                        <a href="{{ path('salon', {slug:'eckenheim'}) }}" class="btn btn-custom">zum Salon</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card card-custom">
+                    <img src="{{ asset('img/original/kelkheim.jpg') }}" class="card-img-top" alt="Salon Kelkheim">
+                    <div class="card-body">
+                        <h5 class="card-title">Kelkheim</h5>
+                        <p class="card-text">Frankfurter Str. 94<br>65779 Kelkheim<br>Tel.: 06195-977244</p>
+                        <a href="{{ path('salon', {slug:'kelkheim'}) }}" class="btn btn-custom">zum Salon</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card card-custom">
+                    <img src="{{ asset('img/original/niederursel.jpg') }}" class="card-img-top" alt="Salon Niederursel">
+                    <div class="card-body">
+                        <h5 class="card-title">Niederursel</h5>
+                        <p class="card-text">Niederurseler Landstaße. 162 <br>
+                            60439 Frankfurt
+                        </p>
+                        <a href="{{ path('salon', {slug:'niederursel'}) }}" class="btn btn-custom">zum Salon</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card card-custom">
+                    <img src="{{ asset('img/original/limburg.jpg') }}" class="card-img-top" alt="Salon Limburg">
+                    <div class="card-body">
+                        <h5 class="card-title">Limburg</h5>
+                        <p class="card-text">
+                            Dr.-Wolff-Straße 2<br>
+                            65549 Limburg</p>
+                        <a href="{{ path('salon', {slug:'limburg'}) }}" class="btn btn-custom">zum Salon</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
 
 {% endblock %}

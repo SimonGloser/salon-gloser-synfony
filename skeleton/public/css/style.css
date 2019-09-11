@@ -5,3 +5,33 @@
     display: flex;
     justify-content: space-around;
 }
+
+.all_salons{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li{
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 20px;
+}
+
+.btn-custom{
+    /*background-color: #153BD0;*/
+
+    background-color: #153BD0;
+    background-image: -moz-linear-gradient(top, #4567ec, #153BD0);
+    background-image: -ms-linear-gradient(top, #4567ec, #153BD0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4567ec), to(bl));
+    background-image: -webkit-linear-gradient(top, #4567ec, #153BD0);
+    background-image: -o-linear-gradient(top, #4567ec, #153BD0);
+    background-image: linear-gradient(top, #4567ec, #153BD0);
+    color: white;
+}
