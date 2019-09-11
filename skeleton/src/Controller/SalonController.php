@@ -9,17 +9,20 @@
 namespace App\Controller;
 
 
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class SalonController
+class SalonController extends AbstractController
 {
     /**
      * @Route("/")
      */
     public function homepage()
     {
-        return new Response('Hello Salons');
+        return $this->render('salon/home.html.twig', [
+            'title' => 'Friseur K.Gloser'
+        ]);
     }
 
     /**
@@ -27,9 +30,9 @@ class SalonController
      */
     public function salon($slug)
     {
-        return new Response(sprintf(
-            'Das ist der Salon in %s', $slug
-        ));
+        return $this->render('salon/salon.html.twig', [
+            'title' => $slug
+        ]);
     }
 
 }
