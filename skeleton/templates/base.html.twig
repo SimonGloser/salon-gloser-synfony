@@ -13,7 +13,7 @@
 <div class="container">
     <!-- start navigation -->
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="/">Salon K. Gloser</a>
+        <a class="navbar-brand" href="{{ path('app_homepage') }}">Salon K. Gloser</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,11 +30,11 @@
                         Standorte
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Eschborn</a>
-                        <a class="dropdown-item" href="#">Kelkheim</a>
-                        <a class="dropdown-item" href="#">Limburg</a>
-                        <a class="dropdown-item" href="#">FFM-Eckenheim</a>
-                        <a class="dropdown-item" href="#">FFM-Niderursel</a>
+                        <a class="dropdown-item" href="{{ path('salon', {slug: 'eschborn'}) }}">Eschborn</a>
+                        <a class="dropdown-item" href="{{ path('salon', {slug: 'kelkheim'}) }}">Kelkheim</a>
+                        <a class="dropdown-item" href="{{ path('salon', {slug: 'limburg'}) }}">Limburg</a>
+                        <a class="dropdown-item" href="{{ path('salon', {slug: 'eckenheim'}) }}">FFM-Eckenheim</a>
+                        <a class="dropdown-item" href="{{ path('salon', {slug: 'niderursel'}) }}">FFM-Niderursel</a>
                     </div>
                 </li>
                 <li class="nav-item">

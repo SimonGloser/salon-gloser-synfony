@@ -16,7 +16,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class SalonController extends AbstractController
 {
     /**
-     * @Route("/")
+     * @Route("/", name="app_homepage")
      */
     public function homepage()
     {
@@ -26,7 +26,7 @@ class SalonController extends AbstractController
     }
 
     /**
-     * @Route("/{slug}")
+     * @Route("/{slug}", name="salon")
      */
     public function salon($slug)
     {
