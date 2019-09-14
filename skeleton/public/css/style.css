@@ -115,4 +115,10 @@ table {
     flex-direction: column;
     align-items: center;
 }
+/* Hausbesuche*/
 
+.container-hausbesuche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
