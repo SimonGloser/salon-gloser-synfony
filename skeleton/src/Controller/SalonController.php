@@ -26,14 +26,27 @@ class SalonController extends AbstractController
     }
 
     /**
-     * @Route("/{slug}", name="salon")
+     * @Route("/salon/{slug}", name="salon")
      */
     public function salon($slug)
     {
+
         return $this->render('salon/salon.html.twig', [
             'title' => $slug
         ]);
     }
+
+    /**
+     * @Route("/{slug}", name="special")
+     */
+    public function preise($slug)
+    {
+        return $this->render($slug.'.html.twig',[
+            'title' => 'Preise'
+        ]);
+    }
+
+
 
 
 
