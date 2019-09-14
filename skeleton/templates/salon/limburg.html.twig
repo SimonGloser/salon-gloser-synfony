@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">{{ title }}</h1>
+                <img src="{{ asset('img/original/limburg.jpg') }}" class="img-fluid" alt="Salon Limburg">
+            </div>
+        </div>
+        <div>
+            <hr class="custom-divider">
+        </div>
+        <div class="container-adresse-oeffnungszeiten">
+            <div class="salon-adresse">
+                <p>City Arkaden, 1.Stock</p>
+                <p>Dr.-Wolff-Straße 2</p>
+                <p>65549 Limburg</p>
+                <p>Tel.: 06431-9098849</p>
+            </div>
+            <div class="salon-oeffnungszeiten">
+                <p class="font-blue">Montag bis Freitag</p>
+                <p class="font-red">9:00 bis 18:30 Uhr</p>
+
+                <p class="font-blue">Samstag</p>
+                <p class="font-red">9:00 bis 16:00 Uhr</p>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

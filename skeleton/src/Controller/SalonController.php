@@ -31,13 +31,13 @@ class SalonController extends AbstractController
     public function salon($slug)
     {
 
-        return $this->render('salon/salon.html.twig', [
+        return $this->render('salon/'.$slug.'.html.twig', [
             'title' => ucfirst($slug)
         ]);
     }
 
     /**
-     * @Route("/{slug}", name="special")
+     * @Route("/{slug}", name="special",)
      */
     public function preise($slug)
     {
