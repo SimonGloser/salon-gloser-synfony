@@ -3,6 +3,25 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block body %}
+    <div class="container flex-column-container">
+        <div class="flex-item">
+            <p class="display-4">Öffnungszeiten</p>
+        </div>
+        <div class="flex-item flex-column-container">
+            <p class="font-blue">Montag bis Freitag</p>
+            <p class="font-red">9:00 bis 18:30 Uhr</p>
+        </div>
+        <div class="flex-item flex-column-container">
+            <p class="font-blue">Samstag</p>
+            <p class="font-red">9:00 bis 16:00 Uhr</p>
+        </div>
+    </div>
+
+    <div>
+        <hr class="custom-divider">
+    </div>
+
+
 
     <div class="container">
         <ul class="all_salons">
@@ -12,7 +31,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Eschborn</h5>
                         <p class="card-text">Neugasse 28<br>65760 Eschborn<br>Tel. 06196-43609</p>
-                        <a href="{{ path('app_homepage') }}" class="btn btn-custom">zum Salon</a>
+                        <a href="{{ path('salon', {slug: 'eschborn'}) }}" class="btn btn-custom">zum Salon</a>
                     </div>
                 </div>
             </li>

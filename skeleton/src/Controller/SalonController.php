@@ -35,4 +35,6 @@ class SalonController extends AbstractController
         ]);
     }
 
+
+
 }

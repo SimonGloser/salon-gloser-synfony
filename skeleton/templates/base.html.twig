@@ -34,7 +34,7 @@
                         <a class="dropdown-item" href="{{ path('salon', {slug: 'kelkheim'}) }}">Kelkheim</a>
                         <a class="dropdown-item" href="{{ path('salon', {slug: 'limburg'}) }}">Limburg</a>
                         <a class="dropdown-item" href="{{ path('salon', {slug: 'eckenheim'}) }}">FFM-Eckenheim</a>
-                        <a class="dropdown-item" href="{{ path('salon', {slug: 'niderursel'}) }}">FFM-Niderursel</a>
+                        <a class="dropdown-item" href="{{ path('salon', {slug: 'niederursel'}) }}">FFM-Niderursel</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -46,6 +46,18 @@
 
     <!-- end navigation -->
     {% block body %}{% endblock %}
+
+    <!-- Footer -->
+    <footer>
+        <div class="flex-container-footer">
+            <div class="">
+                <a class="footerItem" href="#">Impressum</a>
+            </div>
+            <div class="">
+                <a class="footerItem" href="#">Datenschutzerklärung</a>
+            </div>
+        </div>
+    </footer>
     {% block javascripts %}
         <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
         <script src="{{ asset('js/popper.js') }}"></script>
