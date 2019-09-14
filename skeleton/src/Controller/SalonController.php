@@ -32,7 +32,7 @@ class SalonController extends AbstractController
     {
 
         return $this->render('salon/salon.html.twig', [
-            'title' => $slug
+            'title' => ucfirst($slug)
         ]);
     }
 
@@ -42,7 +42,7 @@ class SalonController extends AbstractController
     public function preise($slug)
     {
         return $this->render($slug.'.html.twig',[
-            'title' => 'Preise'
+            'title' => ucfirst($slug)
         ]);
     }
 
